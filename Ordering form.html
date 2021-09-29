@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ordering form</title>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>Billing details</legend>
+        <label for="first_name">First Name*</label>
+        <input type="text" name="first_name" required="true" />
+        <br />
+        <br />
+        <label for="last_name">Last Name*</label>
+        <input type="text" name="last_name" required="true" />
+        <br />
+        <br />
+        <label for="email">Email*</label>
+        <input
+          type="email"
+          name="email"
+          placeholder="Contact Email"
+          required="true"
+        />
+        <br />
+        <br />
+        <label for="tel">Mobile Number*</label>
+        <input
+          type="tel"
+          name="tel"
+          placeholder="+380XXXXXXXXX"
+          required="true"
+        />
+      </fieldset>
+      <fieldset>
+        <legend>Adress</legend>
+        <label for="city">City*</label>
+        <input type="text" name="city" required="true" />
+        <br />
+        <br />
+        <label for="street">Street*</label>
+        <input
+          type="text"
+          name="street"
+          placeholder="Street Name"
+          required="true"
+        />
+        <br />
+        <br />
+        <label for="street_number">Street Number*</label>
+        <input type="text" name="street_number" required="true" />
+        <br />
+        <br />
+        <label for="flat">Flat</label>
+        <input type="text" name="flat" />
+      </fieldset>
+      <fieldset>
+        <legend>Pay options</legend>
+        <p>Pay type:</p>
+        <label for="cash">Cash</label>
+        <input type="radio" name="pay" value="cash" />
+        <br />
+        <br />
+        <label for="card">Credit Card</label>
+        <input type="radio" name="pay" value="card" />
+      </fieldset>
+      <fieldset>
+        <legend>Additional options</legend>
+        <input type="checkbox" name="create" />Create an account?
+        <br />
+        <br />
+        <p><label for="notes">Notes:</label></p>
+        <textarea
+          name="notes"
+          id=""
+          placeholder="Enter notes about delivery or food"
+          cols="50"
+          rows="10"
+        ></textarea>
+      </fieldset>
+      <br />
+      <input type="submit" value="Place order" />
+    </form>
+  </body>
+</html>
